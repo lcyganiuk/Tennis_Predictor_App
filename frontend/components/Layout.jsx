@@ -118,7 +118,7 @@ export default function Layout() {
       </main>
 
       <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
-        Copyright 2026 Tennis Tournament Predictor
+        Tennis Tournament Predictor
       </footer>
     </div>
   );
