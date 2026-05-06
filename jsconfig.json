@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "strict": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./frontend/*"]
+    },
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "checkJs": false,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["react", "react-dom"],
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["frontend/**/*.js", "frontend/**/*.jsx"],
+  "exclude": ["node_modules", "dist"]
+}

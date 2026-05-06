@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 97%;
+    --foreground: 220 25% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 8%;
+    --primary: 158 64% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 94%;
+    --secondary-foreground: 220 25% 20%;
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 50%;
+    --accent: 158 64% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 158 64% 40%;
+    --radius: 0.75rem;
+
+    --tennis-green: 158 64% 40%;
+    --tennis-dark: 220 25% 8%;
+    --tennis-gold: 43 96% 56%;
+    --court-clay: 25 80% 55%;
+    --court-grass: 142 70% 35%;
+    --court-hard: 213 80% 55%;
+  }
+
+  .dark {
+    --background: 220 25% 8%;
+    --foreground: 220 15% 95%;
+    --card: 220 22% 12%;
+    --card-foreground: 220 15% 95%;
+    --popover: 220 22% 12%;
+    --popover-foreground: 220 15% 95%;
+    --primary: 158 64% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 220 15% 80%;
+    --muted: 220 20% 16%;
+    --muted-foreground: 220 15% 55%;
+    --accent: 158 64% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 158 64% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+  }
+}
