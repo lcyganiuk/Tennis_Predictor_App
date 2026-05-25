@@ -65,6 +65,7 @@ Optional environment variables:
 - Copy `backend/.env.example` values into your shell or your local environment
 - `JWT_SECRET_KEY` lets you override the default development secret
 - `DATABASE_URL` lets you point the backend at another database
+- `CORS_ORIGINS` lets you define allowed frontend URLs
 
 ## Admin Account
 

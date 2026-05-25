@@ -1,3 +1,4 @@
+import os
 from typing import List, Optional
 
 from fastapi import Depends, FastAPI, HTTPException
@@ -13,9 +14,14 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Tennis Tournament Predictor API")
 
+cors_origins = os.getenv(
+    "CORS_ORIGINS",
+    "http://localhost:5173,http://localhost:3000",
+).split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=[origin.strip() for origin in cors_origins if origin.strip()],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
